@@ -36,6 +36,10 @@ SS = stock("Samsung", "005930", 15.79, 1.33, 2.83)
 HD = stock("Hyundai", "005380", 8.7, 0.35, 4.27)
 LG = stock("LG", "066570", 317.34, 0.69, 1.37)
 
+samsung = 50000
+stock = 10
+print(samsung * stock)
+
 stock_list.append(SS)
 stock_list.append(HD)
 stock_list.append(LG)
