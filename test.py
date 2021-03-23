@@ -1,11 +1,8 @@
-import pandas as pd
+import struct
 
-data = pd.read_csv('./ch5/5-7/bmi.csv')
+data = struct.pack('b', 100)
 print(data)
+print(f'100 == b"{chr(100)}"')
 
-data_keys = data.keys()
-print(data_keys)
-data_train = data[data_keys[0:2]]
-data_label = data[data_keys[2]]
-print(data_train)
-print(data_label)
+result = struct.unpack('b', data)
+print(result, type(result))
