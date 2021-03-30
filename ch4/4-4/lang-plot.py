@@ -9,7 +9,10 @@ with open('./lang/freq.json', 'r', encoding='utf-8') as fp:
 # 언어마다 계산하기
 lang_dic = {}
 for i, lbl in enumerate(freq[0]['labels']):
+    print('i=', i)
+    print('lbl=', lbl)
     fq = freq[0]['freqs'][i]
+    print('fq=', fq)
     if not (lbl in lang_dic):
         lang_dic[lbl] = fq
         continue

@@ -1,8 +1,11 @@
-import struct
+import os.path as pt
+import re
 
-data = struct.pack('b', 100)
-print(data)
-print(f'100 == b"{chr(100)}"')
+cnt = [0 for n in range(0, 26)]
+print(cnt)
 
-result = struct.unpack('b', data)
-print(result, type(result))
+code_a = ord('a')
+print(code_a)
+code_z = ord('z')
+print(code_z)
+print(r'avb')

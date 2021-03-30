@@ -32,6 +32,8 @@ def load_files(path):
         r = check_freq(fname)
         freqs.append(r[0])
         labels.append(r[1])
+    print(freqs)
+    print(labels)
     return {'freqs':freqs, 'labels':labels}
 data = load_files('./lang/train/*.txt')
 test = load_files('./lang/test/*.txt')
