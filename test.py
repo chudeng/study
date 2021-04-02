@@ -1,11 +1,9 @@
 import os.path as pt
 import re
 
-cnt = [0 for n in range(0, 26)]
-print(cnt)
+my_list = ['가', '나', '다', '라']
+for i in range((len(my_list))-1) :
+    print(my_list[i], my_list[i+1])
+    i += 1
 
-code_a = ord('a')
-print(code_a)
-code_z = ord('z')
-print(code_z)
-print(r'avb')
+
