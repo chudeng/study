@@ -1,9 +1,14 @@
-import os.path as pt
-import re
+import pandas as pd
 
-my_list = ['가', '나', '다', '라']
-for i in range((len(my_list))-1) :
-    print(my_list[i], my_list[i+1])
-    i += 1
+member = ['라이언', '무지', '콘', '프로도', '제이지', '네오', '어피치']
+weight = ['30', '25', '5', '20', '25', '15', '20']
+age = ['5', '4', '10', '3', '7', '6', '11']
 
+kakao_friends = pd.DataFrame()
+kakao_friends['member'] = member
+kakao_friends['weight'] = weight
+kakao_friends['age'] = age
+print(kakao_friends)
 
+for row_index, row in kakao_friends.iterrows():
+    print(row_index, row)
